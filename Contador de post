@@ -1,0 +1,39 @@
+<script style="text/javascript"> function showpostcount(json) { document.write(parseInt(json.feed.openSearch$totalResults.$t,10)); }</script>
+<div class="footer-box__content estadisticas">
+    <p>NUMERO DE COVERS</p>
+    <span class="footer-box__count">
+    <script src="http://www.r4vip.com/feeds/posts/default?alt=json-in-script&amp;callback=showpostcount"></script>
+
+</span>
+<div class="footer-box__content__visits">
+    <p>DIAS ONLINE</p>
+    <span class="footer-box__count">
+   <script>
+	                            function DiasOnline(Dia, Mes, Year, Texto) {
+	                                Meses = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+	                                Hoy = new Date();
+	                                Inicio = Date.parse(Meses[Mes - 1] + " " + Dia + " " + Year);
+	                                Resultado = Math.round((Hoy.getTime() - Inicio) / 86400000);
+	                                document.write(Resultado + " " + Texto);
+	                            }
+	                            DiasOnline(01, 2, 2014, "");
+</script>
+</span>
+                  
+
+
+    <p>COMENTARIOS</p>
+    <span class="footer-box__count">
+ 
+                    <script src="http://www.r4vip.com/feeds/comments/default?alt=json-in-script&amp;callback=showpostcount"></script>
+</span>
+</div></div>
+<style>
+#stats1 {
+margin-left: 32px;
+}
+#Stats1_content {
+margin-left: 34px;
+}
+</style>
+<div id="stats1">VISITAS</div>
